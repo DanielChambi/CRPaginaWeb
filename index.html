@@ -20,22 +20,103 @@
     <!--fixed navbar-->
     <div class="navbar-fixed">
       <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo"><img src="img/Jenny1.jpg" alt="" class="circle"></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#" class="waves-effect">Miau</a></li>
-            <li><a href="#" class="waves-effect">Nyan</a></li>
-          </ul>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo"><img src="img/Jenny1.jpg" alt="" class="circle"></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#" class="waves-effect">Miau</a></li>
+              <li><a href="#" class="waves-effect">Nyan</a></li>
+            </ul>
+            
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            
+          </div>
         </div>
       </nav>
     </div>
-    
-    
-    
-    
-    
 
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="#">Miau</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#">Nyan</a></li>
+    </ul>
+
+      
+
+    <div class="container z-depth-5">
+
+      <div class="col s12 m7">
+        <div class="card medium horizontal blue-grey hide-on-small-only">
+          <div class="card-image">
+            <img class="responsive-img" src="img/Denis navideo.jpg">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p class="flow-text">Este es yo. am a very simple card. I am good at containing 
+                  small bits of information.
+                  I am convenient because I require little markup to use effectively.
+                  I am a very simple card. I am good </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card blue-grey hide-on-med-and-up">
+            <div class="card-image">
+              <img class="responsive-img" src="img/Denis navideo.jpg">
+            </div>
+            <div class="card-content">
+              <p class="flow-text">I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+
+      </div>
+    </div>  
+      
+      <div class="container red z-depth-5"><!--Container background-->
+
+        <div class="container"><!--Container content-->
+            <!--Template for every entry-->
+            <h1>Titulo</h1>
+            <div class="divider"></div>
+                <!--Content-->
+            <div class="section"></div>
+              
+              
+                
+              
+              
+        </div><!--Container content-->    
+
+
+            
+
+              
+      </div><!--Container background-->
+    
+    
+    
+    
+    
+    
     <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    
+    
+    <script>
+      //Sidenav
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {});
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.materialboxed');
+        var instances = M.Materialbox.init(elems, {});
+      });
+    </script>
+
   </body>
 </html>
