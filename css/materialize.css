@@ -3484,7 +3484,7 @@ table span.badge {
   float: left;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 0.75rem;
+  padding: 0.75rem 0.75rem;
   min-height: 1px;
 }
 
@@ -6043,7 +6043,7 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 
 .materialboxed {
-  display: block;
+  display: inline-block;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
   position: relative;
@@ -9082,4 +9082,11 @@ input[type=range]::-ms-thumb {
     text-align: center;
     margin-top: 1.2rem;
   }
+}
+
+/* Added by me because I dont want to look how to do it with all the sh*t already done */
+.thumbnail{
+  height:150px;
+  height:150px;
+  border:50px;
 }
