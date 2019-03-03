@@ -9086,6 +9086,5 @@ input[type=range]::-ms-thumb {
 
 /* Added by me because I dont want to look how to do it with all the sh*t already done */
 .thumbnail{
-  height:150px;
-  border:50px;
+  height:125px;
 }
