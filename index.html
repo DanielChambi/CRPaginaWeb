@@ -5,7 +5,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <!--Import gallery css-->
+    <link type="text/css" rel="stylesheet" href="css/menu_component.css"  media="screen,projection"/>
 
+    <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -28,16 +31,16 @@
               <li><a href="#" class="waves-effect">Blog personal</a></li>
               <li><a href="#" class="waves-effect">Galeria</a></li>
             </ul>
-            
+
             <a href="#" data-target="mobile-nav" class="sidenav-trigger">
-              <i class="material-icons">menu</i>
+                <i class="material-icons">menu</i>
             </a>
             
           </div>
         </div>
       </nav>
     </div>
-
+    
     <ul class="sidenav" id="mobile-nav">      
         <li><a href="#" class="waves-effect">Presentacion</a></li>
         <li><div class="divider"></div></li>
@@ -45,7 +48,7 @@
         <li><div class="divider"></div></li>
         <li><a href="#" class="waves-effect">Galeria</a></li>
     </ul>
-
+    
       
     <!--Personal presentation-->
 
@@ -159,6 +162,7 @@
     <div class="section"></div> <!--for separation-->
     
     <!--Gallery-->
+
     <div class="container">
       <div class="row">
         <span></span>
@@ -197,13 +201,18 @@
         </div>
       </div>
     </div>
+    
     <!--Gallery end-->
     
     
     <!--back to top button-->
-    <a class="btn-small waves-effect right" onclick="topFunction(); return false;"> 
-      <i class="material-icons">arrow_upward</i>
-    </a>
+    
+    <div class="wrapper">
+        <a class="btn-to-top right" onclick="topFunction(); return false;"> 
+          <span class="pulse center"><i class="material-icons">arrow_upward</i></span>
+        </a>
+    </div>
+
     <!--back to top button-->
 
     <!--Footer-->
@@ -227,7 +236,7 @@
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
-    
+
     <script>
       //Sidenav
       document.addEventListener('DOMContentLoaded', function() {
