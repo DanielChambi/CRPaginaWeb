@@ -5,8 +5,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-    <!--Import gallery css-->
-    <link type="text/css" rel="stylesheet" href="css/menu_component.css"  media="screen,projection"/>
+    <!--Import button css-->
+    <link type="text/css" rel="stylesheet" href="css/button_component.css"  media="screen,projection"/>
+    <!--Import loader css-->
+    <link type="text/css" rel="stylesheet" href="css/loader.css"  media="screen,projection"/>
+    
+
 
     <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
@@ -20,6 +24,16 @@
 
   <body style="background-color:rgb(255, 254, 251)">
     
+    <div id="loader" onload="loaderTimer(); return false">
+      <div class="loader-wrapper">
+        <div class="loader">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+        </div>
+      </div>
+    </div>
+
     <!--fixed navbar-->
     <div class="navbar-fixed">
       <nav>
@@ -236,6 +250,7 @@
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/loader.js"></script>
 
     <script>
       //Sidenav
